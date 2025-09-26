@@ -3,185 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haley Chan - Resume</title>
+    <title>Wanderlust Chronicles - Haley's Travel Blog</title>
     <style>
-      /* General Styles */
+      /* General Styles - Adjusted Colors for Travel Vibe */
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Georgia', serif; /* Changed font for a more 'bloggy' feel */
         line-height: 1.6;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background-color: #f8f8f4; /* Lighter, warmer background */
         color: #333;
       }
 
-      /* Header */
+      /* Header - Changed to a Navigation Bar style */
       header {
-        background: #333;
+        background: #007BFF; /* A nice blue for the sky/ocean */
         color: #fff;
-        padding: 2rem 0;
+        padding: 1rem 0;
         text-align: center;
-        border-bottom: 5px solid #007BFF;
+        border-bottom: 5px solid #ffcc00; /* Pop of yellow/gold for sun/sand */
       }
 
       header h1 {
         margin: 0;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
       }
 
-      header p {
-        margin: 0.5rem 0 0;
-        font-size: 1.2rem;
+      nav {
+        margin-top: 0.5rem;
+      }
+
+      nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffcc00; /* Yellow highlight on hover */
+        text-decoration: none;
       }
 
       /* Main Content */
       main {
-        max-width: 800px;
+        max-width: 900px; /* Wider content area for blog posts */
         margin: 2rem auto;
         padding: 1.5rem;
         background: #fff;
         border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       }
 
       section {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem; /* More space between blog sections */
       }
 
       h2 {
         border-bottom: 2px solid #007BFF;
         padding-bottom: 0.5rem;
-        margin-bottom: 1rem;
-        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
         color: #007BFF;
       }
 
+      /* Post Title */
       h3 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         margin-top: 1.5rem;
-        color: #555;
+        color: #333;
+      }
+      
+      /* Post Meta/Date */
+      .post-meta {
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 1rem;
+        display: block; /* Ensures it takes a new line */
+      }
+      
+      .post-content p {
+          margin-bottom: 1.5rem;
       }
 
-      .job-title {
-        font-size: 1.1rem;
-        font-style: italic;
-        margin-top: 0;
-        color: #666;
-      }
+      /* Removed unused resume classes: .job-title, .date-range */
 
       ul {
+        list-style: disc; /* Use standard bullet points for lists within posts */
+        padding-left: 20px;
+      }
+
+      /* Tags/Categories Section (repurposed skills-list) */
+      .tags-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         list-style: none;
         padding: 0;
       }
 
-      ul li {
-        margin-bottom: 0.5rem;
-      }
-
-      .date-range {
-        font-size: 0.9rem;
-        color: #777;
-        float: right;
-      }
-
-      a {
-        color: #007BFF;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      /* Skills Section */
-      .skills-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .skills-list li {
-        background: #e9e9e9;
+      .tags-list li {
+        background: #ffcc00; /* Yellow tag background */
+        color: #333;
         padding: 5px 10px;
         border-radius: 5px;
         font-size: 0.9rem;
+        font-weight: bold;
         white-space: nowrap;
+      }
+      
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #333;
+        color: #f4f4f4;
+        margin-top: 3rem;
+        font-size: 0.9rem;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>[Haley Chan]</h1>
-      <p>
-        [Your Professional Title, e.g., Senior Software Engineer, UX Designer]
-      </p>
+      <h1>Wanderlust Chronicles</h1>
+      <nav>
+          <a href="#latest">Latest Adventures</a>
+          <a href="#about">About Haley</a>
+          <a href="#contact">Connect</a>
+      </nav>
     </header>
 
     <main>
-      <section id="contact">
-        <h2>Contact Information</h2>
-        <ul>
-          <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-          <li>Phone: [Your Phone Number]</li>
-          <li>Location: [Your City, State]</li>
-          <li>LinkedIn: <a href="[Your LinkedIn URL]" target="_blank">[Your LinkedIn Profile]</a></li>
-          <li>GitHub: <a href="[Your GitHub URL]" target="_blank">[Your GitHub Profile]</a></li>
-        </ul>
+      
+      <section id="latest">
+        <h2>Latest Adventures 🌎</h2>
+        
+        <article class="blog-post">
+          <h3>Sailing the Cyclades: A Greek Island Hopping Guide 🇬🇷</h3>
+          <span class="post-meta">Posted on September 26, 2025 | Category: Europe, Sea Travel</span>
+          <div class="post-content">
+            <p>
+              Sun-drenched cliffs, sapphire water, and fresh feta—Greece's Cyclades islands are a true paradise. We spent two weeks sailing from Mykonos to Santorini, discovering hidden coves and charming villages. This post breaks down our itinerary, favorite tavernas, and essential packing tips.
+            </p>
+            <p>
+              Highlights included:
+            </p>
+            <ul>
+              <li>Hiking the caldera in Santorini for a stunning sunset view.</li>
+              <li>Exploring the labyrinthine streets of Mykonos town.</li>
+              <li>Relaxing on the less-crowded beaches of Naxos.</li>
+            </ul>
+          </div>
+          <a href="#">Read More...</a>
+        </article>
+
+        <hr> <article class="blog-post">
+          <h3>Tokyo's Neon Heart: Navigating Japan's Capital 🇯🇵</h3>
+          <span class="post-meta">Posted on August 15, 2025 | Category: Asia, City Guide</span>
+          <div class="post-content">
+            <p>
+              Tokyo is a city of electric energy, where ancient temples stand beside towering skyscrapers. Our five-day guide covers the must-see neighborhoods, the best sushi spots, and how to master the subway system.
+            </p>
+            <p>
+              Don't miss the chance to:
+            </p>
+            <ul>
+              <li>Witness the Shibuya Crossing in action.</li>
+              <li>Find peace at the Meiji Jingu Shrine.</li>
+              <li>Spend an evening singing karaoke in Shinjuku.</li>
+            </ul>
+          </div>
+          <a href="#">Read More...</a>
+        </article>
       </section>
       
-      <section id="summary">
-        <h2>Professional Summary</h2>
+      ---
+      
+      <section id="about">
+        <h2>About The Traveler 🙋‍♀️</h2>
         <p>
-          [A brief, compelling paragraph about your professional self. Highlight your key
-          achievements, skills, and career goals. This is your "elevator pitch."]
+          Hi, I'm **Haley Chan**, and I'm addicted to collecting passport stamps! This blog is a collection of my journeys, from backpacking through Southeast Asia to road-tripping the US West Coast. My mission is to share practical tips, breathtaking photos, and the occasional travel mishap to inspire your next adventure.
         </p>
       </section>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>[Skill 1]</li>
-          <li>[Skill 2]</li>
-          <li>[Skill 3]</li>
-          <li>[Skill 4]</li>
-          <li>[Skill 5]</li>
-          <li>[Skill 6]</li>
-          </ul>
+      ---
+
+      <section id="tags">
+        <h2>Explore By Tags 🏷️</h2>
+        <ul class="tags-list">
+          <li>Budget Travel</li>
+          <li>Solo Trips</li>
+          <li>Digital Nomad</li>
+          <li>Hiking</li>
+          <li>Foodie Adventures</li>
+          <li>Beach Life</li>
+        </ul>
       </section>
 
-      <section id="experience">
-        <h2>Work Experience</h2>
-        <div>
-          <h3>[Company Name]</h3>
-          <p class="job-title">[Your Job Title]</p>
-          <p class="date-range">[Start Date] - [End Date]</p>
-          <ul>
-            <li>[Key achievement or responsibility 1. Use action verbs and quantify results when possible.]</li>
-            <li>[Key achievement or responsibility 2.]</li>
-            <li>[Key achievement or responsibility 3.]</li>
-          </ul>
-        </div>
-        
-        <div>
-          <h3>[Company Name]</h3>
-          <p class="job-title">[Your Job Title]</p>
-          <p class="date-range">[Start Date] - [End Date]</p>
-          <ul>
-            <li>[Key achievement or responsibility 1.]</li>
-            <li>[Key achievement or responsibility 2.]</li>
-          </ul>
-        </div>
-      </section>
+      ---
 
-      <section id="education">
-        <h2>Education</h2>
-        <div>
-          <h3><div The="" University="" of="" Miami=""></div></h3>
-          <p>[Degree, e.g., Bachelor of Science in Computer Science]</p>
-          <p class="date-range">[Graduation Year]</p>
-        </div>
+      <section id="contact">
+        <h2>Connect With Me 📧</h2>
+        <p>Follow the journey on social media or send an email!</p>
+        <ul>
+          <li>Email: <a href="mailto:haley@travelblog.com">haley@travelblog.com</a></li>
+          <li>Instagram: <a href="[Your Instagram URL]" target="_blank">@HaleyWanders</a></li>
+          <li>YouTube: <a href="[Your YouTube URL]" target="_blank">Haley's Vlogs</a></li>
+        </ul>
       </section>
     </main>
+    
+    <footer>
+        &copy; 2025 Wanderlust Chronicles | All Rights Reserved.
+    </footer>
   </body>
 </html>
