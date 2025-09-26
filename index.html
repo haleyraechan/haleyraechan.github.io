@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CHAN TRAVELS - Haley's Travel Blog</title>
     <style>
-      /* General Styles - Adjusted Colors for Travel Vibe */
+      /* General Styles */
       body {
-        font-family: 'Georgia', serif; /* Changed font for a more 'bloggy' feel */
+        font-family: 'Georgia', serif; 
         line-height: 1.6;
         margin: 0;
         padding: 0;
-        background-color: #f8f8f4; /* Lighter, warmer background */
+        /* BACKGROUND IMAGE ADDED */
+        background-color: #f8f8f4; 
+        background-image: url('images/FullSizeRender_VSCO.jpeg'); /* CHANGE THIS PATH */
+        background-size: cover; 
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
         color: #333;
       }
 
-      /* Header - Changed to a Navigation Bar style */
+      /* Header */
       header {
-        background: #004412; /* A nice blue for the sky/ocean */
+        background: #007BFF; /* CHANGED TO BRIGHT BLUE */
         color: #fff;
         padding: 1rem 0;
         text-align: center;
-        border-bottom: 5px solid #ffcc00; /* Pop of yellow/gold for sun/sand */
+        border-bottom: 5px solid #ffcc00; 
       }
 
       header h1 {
@@ -44,22 +50,39 @@
       }
 
       nav a:hover {
-        color: #ffcc00; /* Yellow highlight on hover */
+        color: #ffcc00; 
         text-decoration: none;
       }
 
       /* Main Content */
       main {
-        max-width: 900px; /* Wider content area for blog posts */
+        max-width: 900px;
         margin: 2rem auto;
         padding: 1.5rem;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.9); /* ADDED SLIGHT TRANSPARENCY for readability */
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       }
 
+      /* --- NEW: FLEXBOX CONTAINER FOR LATEST POSTS SECTION --- */
+      #latest {
+        display: flex;
+        flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 3rem;
+      }
+
+      .post-column {
+        width: 48%; /* Each column takes up slightly less than half to allow for gap */
+        min-width: 350px; /* Prevents columns from getting too narrow */
+      }
+      
+      /* --- END NEW FLEXBOX --- */
+      
       section {
-        margin-bottom: 3rem; /* More space between blog sections */
+        margin-bottom: 3rem; 
+        width: 100%; /* Ensures About/Tags/Contact sections use full width */
       }
 
       h2 {
@@ -68,35 +91,35 @@
         margin-bottom: 1.5rem;
         font-size: 2rem;
         color: #007BFF;
+        width: 100%; /* Ensures header spans full width of flex container */
       }
 
       /* Post Title */
       h3 {
-        font-size: 1.8rem;
+        font-size: 1.2rem; /* REDUCED FONT SIZE TO FIT TWO COLUMNS */
         margin-top: 1.5rem;
         color: #333;
       }
       
       /* Post Meta/Date */
       .post-meta {
-        font-size: 0.9rem;
+        font-size: 0.8rem; /* REDUCED FONT SIZE */
         color: #777;
         margin-bottom: 1rem;
-        display: block; /* Ensures it takes a new line */
+        display: block; 
       }
       
       .post-content p {
-          margin-bottom: 1.5rem;
+          font-size: 0.95rem; /* SMALLER FONT SIZE FOR COLUMN */
+          margin-bottom: 1rem;
       }
 
-      /* Removed unused resume classes: .job-title, .date-range */
-
       ul {
-        list-style: disc; /* Use standard bullet points for lists within posts */
+        list-style: disc; 
         padding-left: 20px;
       }
 
-      /* Tags/Categories Section (repurposed skills-list) */
+      /* Tags/Categories Section */
       .tags-list {
         display: flex;
         flex-wrap: wrap;
@@ -106,7 +129,7 @@
       }
 
       .tags-list li {
-        background: #ffcc00; /* Yellow tag background */
+        background: #ffcc00; 
         color: #333;
         padding: 5px 10px;
         border-radius: 5px;
@@ -115,6 +138,26 @@
         white-space: nowrap;
       }
       
+      /* Profile Picture Style */
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 1rem auto;
+        object-fit: cover;
+        border: 3px solid #007BFF; /* Blue ring around profile pic */
+      }
+      
+      /* Post Image Style */
+      .post-image {
+          width: 100%;
+          height: 150px; /* SET FIXED HEIGHT for consistency */
+          object-fit: cover; /* Ensures image covers the area */
+          border-radius: 5px;
+          margin-bottom: 0.5rem;
+      }
+
       /* Footer */
       footer {
         text-align: center;
@@ -141,61 +184,46 @@
       <section id="latest">
         <h2>Latest Adventures 🌎</h2>
         
-        <article class="blog-post">
-          <h3>It Never Rains in Southern California - Except when I'm Visitng</h3>
-          <span class="post-meta">Posted on March 14, 2025 | Category: California, West Coast, Spring Break</span>
-          <div class="post-content">
-            <p>
-              As stated in the title, it never rains in Southern California - except the 5 days I happened to be there. Nonetheless, I made the most out of my trip and enjoyed the west coast views, even if a bit more grey and gloomy than I'd hoped. While this wasn't my first time in California, I explored new areas that I hadn't seen before. 
-            </p>
-            <p>
-              Spots Visited:
-            </p>
-            <ul>
-              <li>Malibu</li>
-              <li>Thousand Oaks</li>
-              <li>Los Angeles</li>
-              <li>Santa Monica</li>
-              <li>USC Campuses - Main and Medical</li>
-            </ul>
-          </div>
-          <a href="#">Read More...</a>
-        </article>
-
-        <hr> <article class="blog-post">
-          <h3>Christmas in the Valley: Phoenix, AZ 🏜️</h3>
-          <span class="post-meta">Posted on December 26, 2024 | Category: Arizona, Southwest, Holidays</span>
-          <div class="post-content">
-            <p>
-              When I imagine Christmas, I typically think cold weather and snow. However, this Christmas, I traveled to Phoenix, AZ with my whole family. Arizona is by far in my top 3 favorite places I've ever visited. There is just something about the dry heat and desert views that I yearn for. Fingers crossed that my parents decide to retire there!
-            </p>
-            <p>
-              Spots Visited:
-            </p>
-            <ul>
-              <li>Tempe</li>
-              <li>Sedona</li>
-              <li>Scottsdale</li>
-              <li>Hole-in-the-Rock Trail</li>
-              <li>Desert Botanical Garden</li>
-              <li>Lake Pleasant Regional Park</li>
-              <li>Chapel of the Holy Cross</li>
-            </ul>
-          </div>
-          <a href="#">Read More...</a>
-        </article>
-      </section>
+        <div class="post-column">
+            <article class="blog-post">
+              <img src="images/california-rain.jpg" alt="A grey, rainy view of Santa Monica pier" class="post-image">
+              <h3>It Never Rains in Southern California - Except when I'm Visitng</h3>
+              <span class="post-meta">Posted on March 14, 2025 | Category: California, West Coast, Spring Break</span>
+              <div class="post-content">
+                <p>
+                  As stated in the title, it never rains in Southern California - except the 5 days I happened to be there. Nonetheless, I made the most out of my trip and enjoyed the west coast views, even if a bit more grey and gloomy than I'd hoped...
+                </p>
+                </div>
+              <a href="#">Read More...</a>
+            </article>
+        </div>
+        
+        <div class="post-column">
+            <article class="blog-post">
+              <img src="images/phoenix-sedona.jpg" alt="Red rocks of Sedona, Arizona" class="post-image">
+              <h3>Christmas in the Valley: Phoenix, AZ 🏜️</h3>
+              <span class="post-meta">Posted on December 26, 2024 | Category: Arizona, Southwest, Holidays</span>
+              <div class="post-content">
+                <p>
+                  When I imagine Christmas, I typically think cold weather and snow. However, this Christmas, I traveled to Phoenix, AZ with my whole family. Arizona is by far in my top 3 favorite places I've ever visited...
+                </p>
+                </div>
+              <a href="#">Read More...</a>
+            </article>
+        </div>
+        </section>
       
-      ---
+      <hr>
       
       <section id="about">
         <h2>About The Traveler 🙋‍♀️</h2>
+        <img src="images/haley-profile.jpg" alt="Haley Chan smiling, wearing a backpack" class="profile-pic">
         <p>
           Hi, I'm Haley Chan, and I love to travel! So far, major spots I've visited include Phoenix, LA, Hawaii, Key West, DC, Boston, NYC, Toronto, Montreal, London, France, Punta Cana, and Cancun. I have plans to visit Nashville and Chicago before 2025 ends - so stay tuned to read all about it!
         </p>
       </section>
 
-      ---
+      <hr>
 
       <section id="tags">
         <h2>Explore By Tags 🏷️</h2>
@@ -209,7 +237,7 @@
         </ul>
       </section>
 
-      ---
+      <hr>
 
       <section id="contact">
         <h2>Connect With Me 📧</h2>
